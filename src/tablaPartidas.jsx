@@ -11,7 +11,7 @@ const TablaPartidas = () => {
 
   const ordenarPorColumna = (columna) => {
     const partidasOrdenadas = [...partidas].sort((a, b) =>
-      a[columna] === b[columna] ? 0 : (a[columna] < b[columna] ? -1 : 1) * (ordenAscendente ? 1 : -1)
+      ordenAscendente ? a[columna] - b[columna] : b[columna] - a[columna]
     );
     setPartidas(partidasOrdenadas);
     setOrdenAscendente(!ordenAscendente)
