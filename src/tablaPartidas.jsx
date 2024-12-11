@@ -12,10 +12,10 @@ const TablaPartidas = () => {
   const ordenarPorColumna = (columna) => {
     const partidasOrdenadas = [...partidas].sort((a, b) =>
       ordenAscendente ? a[columna] - b[columna] : b[columna] - a[columna]
-    );
+    )
     setPartidas(partidasOrdenadas);
     setOrdenAscendente(!ordenAscendente)
-  };
+  }
 
   const agregarPartida = (nuevaPartida) => {
     setPartidas([...partidas, nuevaPartida])
