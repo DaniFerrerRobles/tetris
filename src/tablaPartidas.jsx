@@ -38,16 +38,24 @@ const TablaPartidas = () => {
         Ordenar por Puntaje ({ordenAscendente ? 'Ascendente' : 'Descendente'})
       </button>
 
-      <ul>
-        {partidas.map((partida) => (
-          <li key={partida.id}>
-            {partida.nombre} - {partida.puntaje}
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          {partidas.map((partida) => (
+            <tr key={partida.id}>
+              <td>{partida.nombre}</td>
+              <td>{partida.puntaje}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
 
 export default TablaPartidas;
-  
