@@ -11,11 +11,11 @@ const TablaPartidas = () => {
 
   const ordenarPorColumna = (columna) => {
     const partidasOrdenadas = [...partidas].sort((a, b) =>
-      a[columna] === b[columna] ? 0 : (a[columna] < b[columna] ? -1 : 1) * (ordenAscendente ? 1 : -1)
-    );
+      ordenAscendente ? a[columna] - b[columna] : b[columna] - a[columna]
+    )
     setPartidas(partidasOrdenadas);
     setOrdenAscendente(!ordenAscendente)
-  };
+  }
 
   const agregarPartida = (nuevaPartida) => {
     setPartidas([...partidas, nuevaPartida])
@@ -38,16 +38,24 @@ const TablaPartidas = () => {
         Ordenar por Puntaje ({ordenAscendente ? 'Ascendente' : 'Descendente'})
       </button>
 
-      <ul>
-        {partidas.map((partida) => (
-          <li key={partida.id}>
-            {partida.nombre} - {partida.puntaje}
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          {partidas.map((partida) => (
+            <tr key={partida.id}>
+              <td>{partida.nombre}</td>
+              <td>{partida.puntaje}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
 
 export default TablaPartidas;
-  
