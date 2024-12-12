@@ -35,7 +35,7 @@ const TablaPartidas = () => {
       </button>
 
       <button onClick={() => ordenarPorColumna('puntaje')}>
-        Ordenar por Puntaje ({ordenAscendente ? 'Ascendente' : 'Descendente'})
+        Ordenar por Puntaje ({ordenAscendente ? 'Descendente' : 'Ascendente'})
       </button>
 
       <table>
