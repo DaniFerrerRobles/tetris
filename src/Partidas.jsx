@@ -1,7 +1,7 @@
 import React from 'react';
 import TablaPartidas from '../TablaPartidas';
 
-function Partidas() {
+export function Partidas() {
 <TablaPartidas/>
 }
 
