@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TablaPartidas = () => {
+export const TablaPartidas = () => {
   const [partidas, setPartidas] = useState([
     { id: 1, nombre: "Partida 1", puntaje: 100, fecha: "13 Abril 2023" },
     { id: 2, nombre: "Partida 2", puntaje: 200, fecha: "14 Abril 2023" },
