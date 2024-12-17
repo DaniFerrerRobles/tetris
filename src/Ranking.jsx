@@ -1,89 +1,50 @@
-export function Ranking(){
-    <div id="info" class="">
-    <div id="partidas" class="m-5 p-5 bg-dark">
-        <h2 class="text-center text-light">Ranking</h2>
-        <table class="table table-dark align-middle">
-            <theader>
-                <tr class="bg-dark">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </theader>
-            <tbody>
-                <tr>
-                    <td class="fs-2">1</td>
-                    <td><img src="" alt="avatar" /></td>
-                    <td>ANDER</td>
-                    <td>1255</td>
-                </tr>
-                <tr>
-                    <td class="fs-2">2</td>
-                    <td><img src="" alt="avatar" /></td>
-                    <td>ANDER</td>
-                    <td>1255</td>
-                </tr>
-                <tr>
-                    <td class="fs-2">3</td>
-                    <td><img src="" alt="avatar" /></td>
-                    <td>ANDER</td>
-                    <td>1255</td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
-    </div>
+import React from "react";
 
-    <div id="partidas" class="m-5 p-5 bg-dark">
-        <h2 class="text-center text-light">Partidas</h2>
-        <div class="input-group mb-3">
-            <input
-                type="text"
-                class="form-control"
-                placeholder="Buscador"
-                aria-label="Buscador"
-                aria-describedby="button-addon2"
-            />
-            <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-            >
-                <i class="bi bi-x-lg"></i>
-            </button>
-        </div>
-        <table class="table table-dark">
-            <theader>
-                <tr>
-                    <td></td>
-                    <td>Nick <i class="bi bi-arrow-up-square"></i></td>
-                    <td>Puntuación <i class="bi bi-arrow-up-square"></i></td>
-                    <td>Fecha <i class="bi bi-arrow-up-square"></i></td>
-                </tr>
-            </theader>
-            <tbody>
-                <tr>
-                    <td><img src="" alt="avatar" /></td>
-                    <td>ANDER</td>
-                    <td>10</td>
-                    <td>13 ABRIL 2023</td>
-                </tr>
-                <tr>
-                    <td><img src="" alt="avatar" /></td>
-                    <td>ANDER</td>
-                    <td>600</td>
-                    <td>13 FEBRERO 2023</td>
-                </tr>
-                <tr>
-                    <td><img src="" alt="avatar" /></td>
-                    <td>ANDER</td>
-                    <td>888</td>
-                    <td>1 ENERO 2023</td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
+export function Ranking() {
+  return (
+    <div id="info">
+      <div id="partidas" className="m-5 p-5 bg-dark">
+        <h2 className="text-center text-light">Ranking</h2>
+        <table className="table table-dark align-middle">
+          <thead>
+            <tr className="bg-dark">
+              <th>#</th>
+              <th>Avatar</th>
+              <th>Jugador</th>
+              <th>Puntaje</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="fs-2">1</td>
+              <td>
+                <img src="ruta/a/imagen/avatar1.png" alt="avatar 1" width="50" />
+              </td>
+              <td>ANDER</td>
+              <td>1255</td>
+            </tr>
+            <tr>
+              <td className="fs-2">2</td>
+              <td>
+                <img src="ruta/a/imagen/avatar2.png" alt="avatar 2" width="50" />
+              </td>
+              <td>MARIA</td>
+              <td>1200</td>
+            </tr>
+            <tr>
+              <td className="fs-2">3</td>
+              <td>
+                <img src="ruta/a/imagen/avatar3.png" alt="avatar 3" width="50" />
+              </td>
+              <td>JUAN</td>
+              <td>1100</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
         </table>
+      </div>
     </div>
-</div>
+  );
 }
+
+export default Ranking;
