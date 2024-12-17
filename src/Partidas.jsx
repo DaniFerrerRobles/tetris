@@ -5,4 +5,3 @@ export function Partidas() {
 <TablaPartidas/>
 }
 
-export default Partidas;

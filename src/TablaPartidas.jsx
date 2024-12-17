@@ -73,4 +73,3 @@ const TablaPartidas = () => {
   );
 };
 
-export default TablaPartidas;

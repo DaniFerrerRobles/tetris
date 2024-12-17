@@ -80,4 +80,3 @@ export function Juego() {
   );
 }
 
-export default Juego;
