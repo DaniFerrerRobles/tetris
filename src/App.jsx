@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from 'react';
-import viteLogo from '/vite.svg';
 import './App.css';
 import './tablaPartidas';
 import Instrucciones from "./inicio";
