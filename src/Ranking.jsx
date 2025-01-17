@@ -45,5 +45,5 @@ export function Ranking() {
       </div>
     </div>
   );
-}
+};
 
