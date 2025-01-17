@@ -1,9 +1,9 @@
-import React from 'react';
-import TablaPartidas from './TablaPartidas';
+import React from 'react'
+import TablaPartidas from './TablaPartidas'
 
 export function Partidas() {
     return (
-        <TablaPartidas/>        
+        <TablaPartidas/>  
     )
 
 }
