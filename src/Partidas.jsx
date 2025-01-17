@@ -8,4 +8,4 @@ export function Partidas() {
 
 }
 
-export default Partidas;
+export default Partidas
