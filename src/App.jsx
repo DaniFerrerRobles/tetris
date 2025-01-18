@@ -6,7 +6,7 @@ import Instrucciones from "./inicio";
 import Juego from "./Juego";
 import Partidas from "./Partidas";
 import Ranking from "./Ranking";
-import TablaPartidas from './TablaPartidas'; // Cambios de origin/main;
+
 
 const App = () => (
   <Router>
