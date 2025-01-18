@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import './App.css';
-import Instrucciones from "./Inicio";
+import Instrucciones from "./Iiiiinicio";
 import Juego from "./Juego";
 import Partidas from "./Partidas";
 import Ranking from "./Ranking";
