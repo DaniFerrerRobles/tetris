@@ -6,7 +6,6 @@ import Instrucciones from "./Inicio";
 import Juego from "./Juego";
 import Partidas from "./Partidas";
 import Ranking from "./Ranking";
-import TablaPartidas from "./TablaPartidas";
 
 const App = () => (
   <Router>
@@ -33,7 +32,6 @@ const App = () => (
         <Route path="/Ranking" element={<Ranking />} />
       </Routes>
     </div>
-    <TablaPartidas />
   </Router>
 );
 
