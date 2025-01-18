@@ -31,7 +31,6 @@ const App = () => (
         <Route path="/Ranking" element={<Ranking />} />
       </Routes>
     </div>
-    <TablaPartidas />
   </Router>
 );
 
