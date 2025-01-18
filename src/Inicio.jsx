@@ -23,3 +23,5 @@ export function Instrucciones() {
     </div>
   );
 }
+
+export default Instrucciones;

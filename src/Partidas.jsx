@@ -1,10 +1,10 @@
-import React from 'react';
-
+import React from 'react'
+import TablaPartidas from './TablaPartidas'
 export function Partidas() {
     return (
-        <TablaPartidas/>        
+        <TablaPartidas/>  
     )
 
 }
 
-export default Partidas;
+export default Partidas
