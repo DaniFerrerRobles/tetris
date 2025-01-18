@@ -79,3 +79,5 @@ export function Juego() {
     </div>
   );
 }
+
+export default Juego

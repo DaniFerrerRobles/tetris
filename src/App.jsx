@@ -2,12 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import './App.css';
-import './tablaPartidas';
-import Instrucciones from "./inicio";
+import Instrucciones from "./Inicio";
 import Juego from "./Juego";
 import Partidas from "./Partidas";
 import Ranking from "./Ranking";
-import TablaPartidas from './tablaPartidas'; // Cambios de origin/main;
+import TablaPartidas from "./TablaPartidas";
 
 const App = () => (
   <Router>
