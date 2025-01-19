@@ -1,7 +1,7 @@
 import React from "react";
-import colorPieza from "../lib/colores"
+import { colorPieza } from "../lib/colores";
 
-export const Pieza = (pieza) => {
+ const Pieza = (pieza) => {
   return (
     <div>
       {pieza.map((fila, idFila) => (

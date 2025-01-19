@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { modelos } from "./lib/modelos";
-import Panel from "./componentes/Panel";
-import Pieza from "./componentes/Pieza";
+import { modelos } from "../lib/modelos";
+import Panel from "../componentes/Panel";
+import Pieza from "../componentes/Pieza";
 
 const Juego = () => {
   const [arrayCasillas, setArrayCasillas] = useState(modelos.matriz);

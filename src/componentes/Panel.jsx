@@ -1,5 +1,5 @@
 import React from "react";
-import { colorPieza } from "../lib/colorPieza";
+import { colorPieza } from "../lib/colores";
 
 export const Panel = (arrayCasillas) => {
   return (

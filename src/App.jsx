@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import Instrucciones from "./Inicio";
-import Juego from "./Juego";
+import Juego from "./vistas/Juego";
 import Partidas from "./Partidas";
 import Ranking from "./Ranking";
 
@@ -16,7 +16,7 @@ const App = () => (
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item"><Link className="nav-link" to="/">Inicio</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/Juego">Juego</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="./vistas/Juego">Juego</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/Partidas">Partidas</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/Ranking">Ranking</Link></li>
           </ul>
@@ -26,7 +26,7 @@ const App = () => (
     <div className="container mt-4">
       <Routes>
         <Route path="/" element={<Instrucciones />} />
-        <Route path="/Juego" element={<Juego />} />
+        <Route path="./vistas/Juego" element={<Juego />} />
         <Route path="/Partidas" element={<Partidas />} />
         <Route path="/Ranking" element={<Ranking />} />
       </Routes>
