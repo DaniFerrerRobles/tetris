@@ -2,15 +2,14 @@ import React from "react";
 
 export const Panel = ({ arrayCasillas }) => {
   return (
-    <div className="panel">
-      {arrayCasillas.map((fila, indexFila) => (
-        <div key={indexFila} className="fila">
-          {fila.map((casilla, indexCasilla) => (
-            <div
-              key={indexCasilla}
-              className={`casilla ${casilla === 1 ? "bloque" : ""}`}
-            ></div>
-          ))}
+    <div>
+      {arrayCasillas.map((fila, idFila) => (
+        <div key={idFila} className="d-flex">
+          {fila.map((casilla) => {
+            if (casilla === 1) {
+              casilla = "bg-secondary"
+            }
+          })}
         </div>
       ))}
     </div>
