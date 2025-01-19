@@ -13,8 +13,9 @@ class modeloPieza {
 
             if (this.angulo == 3){
                 this.angulo = 0                
-            }
-            
-        this.angulo = this.angulo + 1
+            }else{
+                this.angulo = this.angulo + 1
+              
+            }            
     }
 }
