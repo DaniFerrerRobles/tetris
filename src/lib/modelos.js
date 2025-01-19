@@ -1,4 +1,3 @@
-// lib/modelos.js
 export const modelos = {
     matriz: [
       [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
