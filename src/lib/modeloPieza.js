@@ -15,7 +15,7 @@ class modeloPieza {
                 this.angulo = 0                
             }else{
                 this.angulo = this.angulo + 1
-              
-            }            
+                
+            }
     }
 }
