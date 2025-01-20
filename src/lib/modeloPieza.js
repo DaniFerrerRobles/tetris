@@ -19,3 +19,5 @@ class modeloPieza {
             }
     }
 }
+
+export default modeloPieza
