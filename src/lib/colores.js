@@ -1,3 +1,16 @@
 export function colorPieza(numero) {
-    return ("bg-primary", "bg-secondary", "bg-success", "bg-danger", "bg-warning", "bg-info", "bg-light", "bg-dark", "bg-white", "bg-transparent")
+    const colores = [
+        "bg-white",
+        "bg-secondary",
+        "bg-primary",
+        "bg-black",
+        "bg-success",
+        "bg-danger",
+        "bg-warning",
+        "bg-info",
+        "bg-light",
+        "bg-dark"
+      ]
+
+      return(colores[numero])
 }
