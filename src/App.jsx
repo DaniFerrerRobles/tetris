@@ -4,7 +4,7 @@ import './App.css';
 import Instrucciones from "./Inicio";
 import Juego from "./Juego";
 import Partidas from "./Partidas";
-import Ranking from "./Ranking";
+import Ranking from "./Ranking"
 
 const App = () => (
   <Router>
