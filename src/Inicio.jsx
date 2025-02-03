@@ -21,7 +21,7 @@ export function Instrucciones() {
           <p>
             Al final de la partida podràs desar la teva puntuació i veure el <strong>rànquing</strong> de jugadors.
           </p>
-          <button className="btn btn-success fs-1 mt-5" ><a href="/Juego">JUGAR</a></button>
+          <button className="btn btn-success fs-1 mt-5" >JUGAR</button>
           <hr />
         </div>
       </main>
