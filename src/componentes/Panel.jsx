@@ -7,7 +7,7 @@ export const Panel = ({ arrayCasillas }) => {
       {arrayCasillas.map((fila, idFila) => (
         <div key={idFila} className="d-flex">
           {fila.map((casilla, idCasilla) => (
-            <div key={idCasilla} className={colorPieza(casilla)} style={{border: "1px solid black"}}>{casilla}</div>
+            <div key={idCasilla} className={colorPieza(casilla)} style={{width: "40px", height: "40px", border: "1px solid", justifyContent: "center"}}>{casilla}</div>
           ))}
         </div>
       ))}
