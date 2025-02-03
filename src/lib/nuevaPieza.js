@@ -7,7 +7,7 @@ export function nuevaPieza(fila, columna) {
 
     let numeroPiezaAleatoria = arrayPiezasNumeroAleatorio
     let nombreDeLaPiezaAleatoria = piezaAleatoria.nombre
-    let anguloDeLaPieza = piezaAleatoria.matriz[0]
+    let anguloDeLaPieza = 0
     let matriz = piezaAleatoria.matriz    
 
     const piezaEscogida = new modeloPieza(numeroPiezaAleatoria,nombreDeLaPiezaAleatoria, anguloDeLaPieza, fila, columna, matriz)
