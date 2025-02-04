@@ -1,9 +1,9 @@
-import React, { useState } from "react"
 import { modelos } from "./lib/modelos"
 import Panel from "./componentes/Panel"
 import Pieza from "./componentes/Pieza"
 import { nuevaPieza } from "./lib/nuevaPieza"
 import { colorPieza } from "./lib/colores"
+import { useEffect, useState } from 'react';
 
 const Juego = () => {
   const [arrayCasillas, setArrayCasillas] = useState(modelos.matriz);
@@ -32,39 +32,48 @@ const Juego = () => {
      pintarPieza(nuevaPiezaInsertar);
    }
 
-   const moverDra = () => console.log("Mover a la derecha")
+   const moverDra = () => {
+    const posicion = setPiezaActual({ ...piezaActual, columna: piezaActual.columna + 1 })
 
-   const moverIzq = () => console.log("Mover a la izquierda")
+    pintarPieza(posicion)
+  }
 
-   const bajarr = () => console.log("Mover hacia abajo")
+  const moverIzq = () => {
+    const posicion = setPiezaActual({ ...piezaActual, columna: piezaActual.columna - 1 })
 
-   const girar = () => console.log("girar pieza")
+    pintarPieza(posicion)
+  }
+
+  const girar = () => {
+  setPiezaActual(piezaActual.girar)
+  }
 
    const bajar = () => {
     const posicion = setPiezaActual({ ...piezaActual, fila: piezaActual.fila + 1 })
 
     pintarPieza(posicion)
   }
-
-
-   const controlTeclas = (event) => {
-    switch (event.key) {
-      case "ArrowRight":
-        moverDra();
-        break;
-      case "ArrowLeft":
-        moverIzq();
-        break;
-      case "ArrowDown":
-        bajar();
-        break;
-      case "ArrowUp":
-        girar();
-        break;
-      default:
-        break;
+  useEffect(() => {
+    const controlTeclas = (event) => {
+      switch (event.key) {
+        case "ArrowRight":
+          moverDra();
+          break;
+        case "ArrowLeft":
+          moverIzq();
+          break;
+        case "ArrowDown":
+          bajar();
+          break;
+        case "ArrowUp":
+          girar();
+          break;
+        default:
+          break;
+      }
     }
-  };
+  })
+  
 
   return (
 <div className="d-flex flex-column justify-content-between align-items-center">
