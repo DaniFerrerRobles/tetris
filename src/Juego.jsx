@@ -32,6 +32,34 @@ const Juego = () => {
      pintarPieza(nuevaPiezaInsertar);
    }
 
+   const moverDra = () => console.log("Mover a la derecha")
+
+   const moverIzq = () => console.log("Mover a la izquierda")
+
+   const bajar = () => console.log("Mover hacia abajo")
+
+   const girar = () => console.log("girar pieza")
+
+
+   const controlTeclas = (event) => {
+    switch (event.key) {
+      case "ArrowRight":
+        moverDra();
+        break;
+      case "ArrowLeft":
+        moverIzq();
+        break;
+      case "ArrowDown":
+        bajar();
+        break;
+      case "ArrowUp":
+        girar();
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
 <div className="d-flex flex-column justify-content-between align-items-center">
       <Panel arrayCasillas = {arrayCasillas} />
