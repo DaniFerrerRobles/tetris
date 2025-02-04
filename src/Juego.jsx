@@ -36,9 +36,15 @@ const Juego = () => {
 
    const moverIzq = () => console.log("Mover a la izquierda")
 
-   const bajar = () => console.log("Mover hacia abajo")
+   const bajarr = () => console.log("Mover hacia abajo")
 
    const girar = () => console.log("girar pieza")
+
+   const bajar = () => {
+    const posicion = setPiezaActual({ ...piezaActual, fila: piezaActual.fila + 1 })
+
+    pintarPieza(posicion)
+  }
 
 
    const controlTeclas = (event) => {
